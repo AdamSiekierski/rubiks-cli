@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "lib": ["ES6"],
+    "strict": true,
+    "types": ["node"],
+    "resolveJsonModule": true,
+    "outDir": "bin/"
+  },
+  "files": ["src/index.ts"]
+}
