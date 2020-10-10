@@ -4,11 +4,13 @@
   "repository": "https://github.com/AdamSiekierski/rubiks-cli",
   "author": "Adam Siekierski",
   "license": "MIT",
+  "gypfile": true,
   "scripts": {
-    "dev": "nodemon src/index.ts",
-    "start": "ts-node src/index.ts",
-    "build": "tsc -p .",
-    "prepublish": "npm run build",
+    "start": "ts-node lib/index.ts",
+    "build:scrambler": "cd ./lib/scrambler && npm run build",
+    "build:cli": "tsc -p .",
+    "build": "npm run build:scrambler && npm run build:cli",
+    "prepare": "npm run build",
     "test": "ava"
   },
   "devDependencies": {

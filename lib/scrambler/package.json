@@ -1,0 +1,11 @@
+{
+  "name": "scrambler",
+  "main": "scrambler.js",
+  "scripts": {
+    "build": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "node-addon-api": "^3.0.2",
+    "node-gyp": "^7.1.0"
+  }
+}

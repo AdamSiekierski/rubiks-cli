@@ -106,7 +106,7 @@ dist
 .tern-port
 
 # IDE's
-.vscode/
+.vscode/snipsnap.code-snippets
 .idea/
 
 # Built files
