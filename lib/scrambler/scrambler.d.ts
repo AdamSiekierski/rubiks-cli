@@ -1,1 +1,1 @@
-export function hello(): string;
+export function scramble(): string;

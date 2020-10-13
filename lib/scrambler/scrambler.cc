@@ -1,6 +1,6 @@
 #include <napi.h>
 
-Napi::String Hello(const Napi::CallbackInfo &info)
+Napi::String Scramble(const Napi::CallbackInfo &info)
 {
   Napi::Env env = info.Env();
 
@@ -9,8 +9,8 @@ Napi::String Hello(const Napi::CallbackInfo &info)
 
 Napi::Object Init(Napi::Env env, Napi::Object exports)
 {
-  exports.Set(Napi::String::New(env, "hello"),
-              Napi::Function::New(env, Hello));
+  exports.Set(Napi::String::New(env, "scramble"),
+              Napi::Function::New(env, Scramble));
 
   return exports;
 }
