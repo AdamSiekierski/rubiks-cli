@@ -1,1 +1,1 @@
-export function scramble(): string;
+export function scramble(cubeSize: number): string;
